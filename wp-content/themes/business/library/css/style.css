@@ -1,0 +1,1118 @@
+/*
+SMALL (BASE) SIZE
+These are the small/base styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+/******************************************************************
+
+Stylesheet: Base/Small Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+/*********************
+LINK STYLES
+*********************/
+a, a:visited {
+  /*adds highlight on hover */
+  /* on click */
+  /* mobile tap color */ }
+  a:link, a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/******************************************************************
+H1, H2, H3, H4, H5 P STYLES
+******************************************************************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  /*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
+  /* removing text decoration from all headline links */ }
+  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+    text-decoration: none; }
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+  zmargin-bottom: 20px; }
+  .header #inner-header li {
+    list-style: none; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.top-bar .title-area {
+  z-index: 1; }
+
+.off-canvas-list ul {
+  margin-left: 0; }
+  .off-canvas-list ul li a {
+    border-bottom: 0px; }
+  .off-canvas-list ul .dropdown {
+    margin-left: 20px; }
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content {
+  /*adds highlight on hover */ }
+  #content a:hover, #content a:focus {
+    background: #008cba;
+    color: #fff; }
+
+/* end .hentry */
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+  color: #999; }
+
+/* entry content */
+.entry-content {
+  /*
+  image alignment on a screen this size may be
+  a bit difficult. It's set to start aligning
+  and floating images at the next breakpoint,
+  but it's up to you. Feel free to change it up.
+  */ }
+  .entry-content dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em; }
+  .entry-content img {
+    max-width: 100%;
+    height: auto; }
+  .entry-content video, .entry-content object {
+    max-width: 100%;
+    height: auto; }
+  .entry-content pre {
+    background: #eee;
+    border: 1px solid #cecece;
+    padding: 10px; }
+
+/* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */ }
+  .wp-caption img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%; }
+  .wp-caption p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center; }
+
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+.pagination a:hover {
+  color: black; }
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+#comments {
+  /* number of comments span */ }
+
+#respond ul {
+  margin-left: 0px; }
+
+.commentlist {
+  /* general comment classes */
+  /* vcard */
+  /* end .commentlist .vcard */
+  /* comment meta */
+  /* comment content */
+  /* end .commentlist .comment_content */
+  /* comment reply link */
+  /* end .commentlist .comment-reply-link */ }
+  .commentlist li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding: 0.7335em 10px;
+    /* end .commentlist li ul.children */ }
+    .commentlist li:last-child {
+      margin-bottom: 0; }
+    .commentlist li ul.children {
+      margin: 0;
+      /* variations */
+      /* change number for different depth */ }
+  .commentlist li[class*=depth-] {
+    margin-top: 1.1em; }
+  .commentlist li.depth-1 {
+    margin-left: 0;
+    margin-top: 0; }
+  .commentlist li:not(.depth-1) {
+    margin-left: 10px;
+    margin-top: 0;
+    padding-bottom: 0;
+    background: #e7e7e7; }
+  .commentlist li.depth-3 {
+    background: #dadada; }
+  .commentlist .vcard {
+    margin-left: 50px; }
+    .commentlist .vcard cite.fn {
+      font-weight: 700;
+      font-style: normal; }
+    .commentlist .vcard time {
+      float: right; }
+      .commentlist .vcard time a {
+        color: #999;
+        text-decoration: none; }
+        .commentlist .vcard time a:hover {
+          text-decoration: underline; }
+    .commentlist .vcard img.avatar {
+      position: absolute;
+      left: 10px;
+      padding: 2px;
+      border: 1px solid #cecece;
+      background: #fff; }
+  .commentlist .comment_content p {
+    margin: 0.7335em 0 1.5em;
+    font-size: 1em;
+    line-height: 1.5em; }
+  .commentlist .comment-reply-link {
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.875rem;
+    padding-right: 1.75rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.75rem;
+    font-size: 0.8125rem;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */
+    background-color: #008cba;
+    border-color: #007095;
+    color: white;
+    float: right; }
+    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+      background-color: #007095; }
+    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+      color: white; }
+
+/* end .commentlist */
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+.respond-form {
+  margin: 1.5em 10px;
+  padding-bottom: 2.2em; }
+  .respond-form form {
+    margin: 0.75em 0; }
+    .respond-form form li {
+      list-style-type: none;
+      clear: both;
+      margin-bottom: 0.7335em; }
+      .respond-form form li label,
+      .respond-form form li small {
+        display: none; }
+    .respond-form form input[type=text],
+    .respond-form form input[type=email],
+    .respond-form form input[type=url],
+    .respond-form form textarea {
+      padding: 3px 6px;
+      background: #efefef;
+      border: 2px solid #cecece;
+      line-height: 1.5em;
+      /* form validation */ }
+      .respond-form form input[type=text]:focus,
+      .respond-form form input[type=email]:focus,
+      .respond-form form input[type=url]:focus,
+      .respond-form form textarea:focus {
+        background: #fff; }
+      .respond-form form input[type=text]:invalid,
+      .respond-form form input[type=email]:invalid,
+      .respond-form form input[type=url]:invalid,
+      .respond-form form textarea:invalid {
+        outline: none;
+        border-color: #fbc2c4;
+        background-color: #f6e7eb;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none; }
+    .respond-form form input[type=text],
+    .respond-form form input[type=email],
+    .respond-form form input[type=url] {
+      max-width: 400px;
+      min-width: 250px; }
+    .respond-form form textarea {
+      resize: none;
+      width: 97.3%;
+      height: 150px; }
+
+/* comment submit button */
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em; }
+
+/* cancel comment reply link */
+/* logged in comments */
+/* allowed tags */
+#allowed_tags {
+  margin: 1.5em 10px 0.7335em 0; }
+
+/* no comments */
+.nocomments {
+  margin: 0 20px 1.1em; }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.widget ul {
+  margin: 0; }
+  .widget ul li {
+    list-style: none;
+    /* deep nesting */ }
+
+#sidebar-offcanvas .widgettitle {
+  color: #fff; }
+
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+  margin-top: 1em; }
+
+/*
+if you checked out the link above:
+http://www.alistapart.com/articles/organizing-mobile/
+you'll want to style the footer nav
+a bit more in-depth. Remember to keep
+it simple because you'll have to
+override these styles for the desktop
+view.
+*/
+/* end .footer-links */
+/*********************
+FOUNDATION STYLES
+*********************/
+.clearing-assembled.clearing-blackout a:hover {
+  background: none; }
+
+/*********************
+PLUGIN STYLES
+*********************/
+.gform_body ul {
+  list-style: none outside none;
+  margin: 0; }
+
+/*
+MEDIUM
+*/
+@media only screen and (min-width: 40.063em) {
+  /******************************************************************
+  
+  Stylesheet: Nediun Stylesheet
+  
+  Styles apply to 40.063em and up.
+  
+  ******************************************************************/
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* entry content */
+  .entry-content {
+    /* at this larger size, we can start to align images */ }
+    .entry-content .alignleft, .entry-content img.alignleft {
+      margin-right: 1.5em;
+      display: inline;
+      float: left; }
+    .entry-content .alignright, .entry-content img.alignright {
+      margin-left: 1.5em;
+      display: inline;
+      float: right; }
+    .entry-content .aligncenter, .entry-content img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both; }
+
+  /* end .entry-content */
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+  .widget {
+    padding: 0 10px;
+    margin: 2.2em 0; }
+
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  check your menus here. do they look good?
+  do they need tweaking?
+  */
+  /* end .footer-links */
+  /*********************
+  FOUNDATION STYLES
+  *********************/
+  /*********************
+  PLUGIN STYLES
+  *********************/ }
+/*
+LARGE
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 64.063em) {
+  /******************************************************************
+  
+  Stylesheet: Large Stylesheet
+  
+  Styles apply to 64.063em and up.
+  
+  ******************************************************************/
+  /*********************
+  GENERAL STYLES
+  *********************/
+  /*********************
+  LAYOUT & GRID STYLES
+  *********************/
+  .wrap {
+    max-width: 1140px; }
+
+  /*********************
+  HEADER STYLES
+  *********************/
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */ }
+    .widget ul li ul {
+      margin-top: 0.75em;
+      padding-left: 1em; }
+
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+  .footer-links ul li {
+    /*
+    be careful with the depth of your menus.
+    it's very rare to have multi-depth menus in
+    the footer.
+    */ }
+
+  /* end .footer-links */
+  /*********************
+  FOUNDATION STYLES
+  *********************/
+  /*********************
+  PLUGIN STYLES
+  *********************/ }
+/*
+XLARGE
+*/
+@media only screen and (min-width: 90.063em) {
+  /******************************************************************
+  
+  Stylesheet: X-Large Stylesheet
+  
+  Styles apply to 90.063em and up.
+  
+  
+  ******************************************************************/ }
+/*
+XXLARGE
+*/
+@media only screen and (min-width: 120.063em) {
+  /******************************************************************
+  
+  Stylesheet: XX-Large Stylesheet
+  
+  Styles apply to 120.063em and up.
+  
+  ******************************************************************/ }
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */ }
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+  /******************************************************************
+  
+  Stylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  a, a:visited {
+    color: #444444 !important;
+    text-decoration: underline; }
+    a:after, a:visited:after {
+      content: " (" attr(href) ")"; }
+    a abbr[title]:after, a:visited abbr[title]:after {
+      content: " (" attr(title) ")"; }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; }
+
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none; } }    /* 
+
+
+Brand colours
+1. Light blue #66ccff, rgb 102,204,255
+2. Grey #6d6e71, rgb 109,110,113
+3. Light blue background #eff9ff, rgb 239,249,255
+4. Light green background #f4f9ef, rgb 244, 249, 239
+5. Light grey footer background #bcbdc0, rgb 188,189,192
+
+*/
+
+
+/* all site styles, p, a etc */
+
+h1, h2, h3, h4, p, a, li {
+	font-weight: 300;
+	font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-size: 2em;
+	color: #6d6e71;
+	font-family: 'amblebold';
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.5em;
+	color: #6d6e71;
+	font-family: 'amblebold';
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+}
+
+.mainBody {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+	.mainBody {
+		padding: 0 20px;
+	}
+}
+
+.row.marginBottom {
+	margin-bottom: 50px;
+}
+.clearBoth {
+	clear: both;
+}
+
+#container {
+	margin-top: 2%;
+}
+	/************ 
+	Header
+	************/
+	
+@media (min-width: 640px ) {
+	.contactOuter {
+		margin-top: 44px;
+		padding-right: 0;
+	}
+}
+
+.contact {
+	float: right;
+}
+.contact span {
+	text-transform: uppercase; 
+	color: #fff;
+	background-color: #66ccff;
+	display: inline-block;
+	padding: 20px;
+	font-family: 'ambleregular';
+	font-size: 1.2em;
+}
+
+@media (max-width: 400px ) {/* display small slider */
+	.slider.large,
+	.slider.medium { 
+		display: none;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 799px) {/* display medium slider */
+	.slider.large,
+	.slider.small { 
+		display: none;
+	}
+}
+
+@media (min-width: 801px) { /* display large slider */
+	.slider.medium,
+	.slider.small { 
+		display: none;
+	}
+}
+@media (max-width: 640px ) {/* display header elements central */
+	header .columns,
+	.contact {
+		width: 100%;
+		max-width: 640px;
+		text-align: center;
+	}
+}
+
+.contact span a {
+	color: #fff;
+}
+
+.sortOverflow {
+	overflow: auto; 
+}
+
+@media (max-width: 640px) {
+	.fullWidthSlider { /* Hides large image on viewports less than 640px */
+		display: none;
+	}
+}
+
+	/* 
+	Navigation
+	*/
+	
+nav {
+	max-width: 1000px;
+	background-color: #6d6e71;
+	overflow: auto;
+}
+
+nav li {
+	float: left;
+	list-style: none;
+	min-width: 13%;
+	text-align: center;
+	transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+}
+
+@media (max-width: 640px) {
+	nav li {
+		float: none; /* fixes burger menu issue of not displaying */
+		width: auto;
+	}
+	.nav-end,
+	.nav-start {
+		display: none;
+	}
+}
+
+.navOuter {
+	position: relative; 
+	background-color: #6d6e71;
+	margin: 10px auto;
+}
+
+nav li a {
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+	padding: 20px 20px;
+	font-family: 'amblebold';
+}
+
+nav li:hover,
+nav li.active,
+nav li.current_page_item {
+	background-color: #66ccff;
+}
+.nav-toggle {
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+ul.brandColor {
+	margin: 10px 0;
+}
+ul.brandColor.brandColorTwo {
+	list-style: none;
+}
+ul.brandColor.brandColorTwo li:before {
+	content: "• ";
+	color: #b2422e;
+	padding-right: 20px;
+}
+
+	/************ 
+	Main body
+	************/
+
+.pageIntro {
+	background-color: #66ccff;
+	padding: 18px 20px 20px;
+	color: #fff;
+}
+.pageIntro h1 {
+	color: #fff;
+	font-family: 'amblebold';
+	font-size: 1.8em;
+}
+.pageIntro p {
+	font-weight: bold;
+}
+
+
+
+.sectionsOuterPods {
+	padding: 10px;
+	background-color: #eff9ff;
+	overflow: auto;
+	margin: 10px 0;
+}
+
+.sectionsOuterPods img {
+	margin: 0 auto;
+	display: block;
+	width: 279px;
+	height: 221px;
+}
+.sectionsOuterPods .large {/* the 3rd image on the right which is slightly bigger */
+	width: 442px;
+}
+
+h2 {
+	text-transform: uppercase;
+	padding: 5px 5px 5px 30px;
+	font-size: 1em;
+	text-align: center;
+	font-family: 'amblebold';
+}
+
+h2.sections {
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 1.3em;
+	font-family: 'amblebold';
+	margin: 10px 0;
+	color: #fff;
+	text-align: center;
+}
+
+h2.sections.sections--hp {
+	background-color: #66ccff;
+}
+
+h2.sections.sections--inner {
+	background-color: #bcbdc0;
+}
+
+
+.sections--section {
+	padding: 10px;
+}
+
+
+.sections--section p {
+	margin: 20px 0;
+}
+
+	/**** 
+	Inner pages 
+	****/
+
+.sections--section-inner {
+	padding: 0px;
+	margin: 14px 0;
+}
+
+
+.sections--section-inner img {
+	float: left;
+	margin-right: 13px; 
+	margin-bottom: 20px;
+}
+
+.sections--section-inner-rhs img {
+	width: 100%;
+	float: left;
+	margin-right: 13px; 
+	margin-bottom: 20px;
+}
+
+.sections--section-inner img.fullwidth {
+	width: 100%;
+}
+
+@media (min-width: 553px) and (max-width: 1025px) {
+	.sections--section-inner img.fullwidth {
+		width: 50%;
+	}
+}
+
+@media (max-width: 552px) {
+	.sections--section-inner img.fullwidth { /* pushes content on new line so image takes up 100% */
+		width: auto;
+		display: block;
+		margin: 0 auto 20px;
+	}
+}
+
+@media (max-width: 690px) {
+	.sections--section-inner img {
+		margin-right: 1%;
+	}
+}
+@media (max-width: 500px) {
+	.sections--section-inner img {
+		float: none;
+		width: 100%;
+	}
+}
+
+.sections--section-inner img:nth-of-type(2) {
+	margin-right: 0;
+}
+
+.paddingLeft {
+	padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+	.paddingLeft {
+		padding-left: 10px;
+	}
+}
+
+.highlight {
+	font-size: 1.2em;
+	color: #66ccff;
+	font-family: 'amblebold';
+}
+
+.large {
+	font-size: 1.8em;
+}
+
+a.nav-toggle {
+	color: #fff;
+}
+/* contact page */ 
+
+
+.sectionNext {
+	background-color: #f4f9ef;
+	padding: 30px;
+	overflow: auto;
+}
+.sectionNext img {
+	margin-left: 20px; 
+	float:right;
+}
+
+.extraMargin {/* used on contact us page */
+	margin:20px auto;
+}
+
+ 
+@media (max-width: 1025px) {
+	.sectionNext img {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+h2.sectionNext {
+	text-transform: uppercase;
+	padding: 5px 5px 5px 0px;
+	font-size: 1em;
+	text-align: left;
+	font-family: 'amblebold';
+	border-bottom: 1px solid #6d6e71;
+}
+
+	
+.quote {
+	display: block;
+	font-style: italic; 
+	margin: 20px 0;
+}
+
+.quote:before {	content: "- "; }
+.quote:after { content: " -"; }
+
+	/************ 
+	Footer
+	************/
+
+footer {
+	background-color: #bcbdc0;
+	color: #fff;
+	padding: 20px;
+	font-family: 'amblebold';
+}
+
+footer a {
+	color: #fff;
+}
+
+.footerTop {
+	overflow: auto;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	margin-bottom: 5%;
+}
+
+.footerTop ul li {
+	float: left;
+	padding-right: 40px;
+}
+
+.footerBottom {
+	text-align: left;
+	border-top: 2px solid #fff;
+	padding-top: 20px;
+	color: #6d6e71;
+}
+
+
+	/************ 
+	Fonts
+	************/
+
+@font-face {
+    font-family: 'amblebold';
+   
+    src: url('../fonts/Amble-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-Bold-webfont.woff') format('woff'),
+         url('../fonts/Amble-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-Bold-webfont.svg#amblebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblelight';
+    src: url('../fonts/Amble-Light-webfont.eot');
+    src: url('../fonts/Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-Light-webfont.woff') format('woff'),
+         url('../fonts/Amble-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-Light-webfont.svg#amblelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('../fonts/Amble-Regular-webfont.eot');
+    src: url('../fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('../fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

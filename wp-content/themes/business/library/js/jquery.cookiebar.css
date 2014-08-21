@@ -1,0 +1,20 @@
+#cookie-bar {background:rgba(0,0,0, 0.5); height:26px; line-height:24px; color:#eeeeee; text-align:center; padding:3px 0; font-size:12px; font-family:Helvetica, arial, sans-serif;}
+#cookie-bar .message1 { display:inline-block; width:90%;}
+#cookie-bar.fixedcookie {position:fixed; bottom:0; left:0; width:100%;height:auto;}
+#cookie-bar .close { margin-bottom-12px; position:absolute; bottom:0px; right:10px; }
+#cookie-bar p {margin:0; padding:0; display:inline-block;}
+#cookie-bar a {color:#ffffff; text-decoration:underline;}
+#cookie-bar .cb-enable {font-size:20px; text-decoration:none; margin-left:25px; line-height:24px; }
+#cookie-bar .cb-enable:hover {}
+#cookie-bar .cb-disable {background:#990000;}
+#cookie-bar .cb-disable:hover {background:#bb0000;}
+#cookie-bar .cb-policy {background:#000;}
+#cookie-bar .cb-policy:hover {background:green;}
+
+#cookie-bar .message2 { display: none;}
+@media only screen and (max-width:900px) { 
+	#cookie-bar .message  { display:none;}
+	#cookie-bar .message2 { display:inline-block;}
+
+
+}
